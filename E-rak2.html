@@ -1,0 +1,17 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+<!---my-->	
+      <a-assets>
+<!-- id=“file name“ src=“file url" -->
+<a-asset-item id="untitled-scene" src="https://raw.githubusercontent.com/kapilbtkit/test-model-upload1/master/untitled-scene.gltf"></a-asset-item>
+</a-assets>
+<!-- scale values allow you to adjust the file’s display size, gltf-model=“#your file name“ -->
+<a-entity scale="2 2 2" gltf-model="#untitled-scene"></a-entity>
+<a-marker-camera preset='hiro'></a-marker-camera>
+</a-scene>
+  </body>
